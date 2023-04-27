@@ -1,0 +1,77 @@
+.navbar{
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #394867;
+    color: #F1F6F9;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+.logo{
+    font-size: 32px;
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+.links > #ll{
+    list-style: none;
+    text-decoration: none;
+}
+#ll > a{
+    text-decoration: none;
+    font-size: 22px;
+    color: #F1F6F9;
+}
+#ll > a:hover{
+    text-decoration: underline;
+    text-decoration-color: #F1F6F9;
+}
+#ll > a:visited{
+    text-decoration: underline;
+}
+.menuicon{
+    display: none;
+}
+.closeicon{
+    display: none;
+}
+.menulist{
+    display: none;
+    flex-direction: column;
+    position: relative;
+    top: 4.7rem;
+    background-color: #394867;
+    text-align: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+.links > #ml{
+    list-style: none;
+    text-decoration: none;
+}
+#ml > a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #F1F6F9;
+}
+#ml > a:hover{
+    text-decoration: underline;
+    text-decoration-color: #F1F6F9;
+}
+#ml > a:visited{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 678px) {
+    .links{
+        display: none;
+    }
+    .menuicon{
+        display: flex;
+    }
+}

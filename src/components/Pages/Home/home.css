@@ -1,0 +1,19 @@
+.home{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    background-color: #9BA4B5;
+    height: 100%;
+    position: absolute;
+}
+.home > h1{
+    font-size: 68px;
+}
+.home > p{
+    padding: 0 3rem;
+    line-height: 32px;
+    font-size: 20px;
+}
