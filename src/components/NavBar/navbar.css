@@ -6,9 +6,10 @@
     align-items: center;
     background-color: #394867;
     color: #F1F6F9;
-    position: fixed;
     width: 100%;
-    z-index: 2;
+    z-index: 1;
+    margin-bottom: 1rem;
+    position: fixed;
 }
 .logo{
     font-size: 32px;

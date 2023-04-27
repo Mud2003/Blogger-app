@@ -17,8 +17,8 @@ function NavBar() {
             <nav className='navbar'>
                 <h1 className='logo'>BLOG</h1>
                 <ul className='links'>
-                    <li id='ll'><Link>Home</Link></li>
-                    <li id='ll'><Link>Blogs</Link></li>
+                    <li id='ll'><Link to='/'>Home</Link></li>
+                    <li id='ll'><Link to='/blogs'>Blogs</Link></li>
                     <li id='ll'><Link>Create Post</Link></li>
                 </ul>
                 <div className='menuicon' onClick={clickBtn}>
@@ -27,8 +27,8 @@ function NavBar() {
                 </div>
             </nav>
             <ul className="menulist" id='mnl' style={{display}}>
-                <li id='ml'><Link>Home</Link></li>
-                <li id='ml'><Link>Blogs</Link></li>
+                <li id='ml'><Link to='/'>Home</Link></li>
+                <li id='ml'><Link to='/blogs'>Blogs</Link></li>
                 <li id='ml'><Link>Create Post</Link></li>
             </ul>
         </>

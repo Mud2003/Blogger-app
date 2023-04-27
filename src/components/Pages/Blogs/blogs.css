@@ -1,0 +1,9 @@
+.bl{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2rem;
+    padding-top: 6rem;
+}
