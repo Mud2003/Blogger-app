@@ -9,7 +9,6 @@ function NavBar() {
     const [display, setDisplay] = useState('none');
 
     const clickBtn = () => {
-        // setDisplay('flex');
         setDisplay((prevDisplay) => (prevDisplay === 'none' ? 'flex' : 'none'));
     }
 
