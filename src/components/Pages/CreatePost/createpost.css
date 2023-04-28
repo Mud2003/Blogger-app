@@ -67,6 +67,12 @@
     }
 }
 @media screen and (max-width: 488px) {
+    .form{
+        padding-top: 8rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 3rem;
+    }
     .formcontent{
         border: 2px solid #212A3E;
         border-radius: 10px;
