@@ -1,18 +1,21 @@
 import './createpost.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function CreatePost() {
 
     const [formData, setFormData] = useState([]);
     
+    useEffect(() => {
+        console.log(formData);
+    },[formData]);
+
 
     const handleSubmit = (event) => {
         event.preventDefault(); // prevent page from refreshing
         const { imageUrl, title, paragraph } = event.target.elements; // get form data
         const newFormData  = { imageUrl: imageUrl.value, title: title.value, paragraph: paragraph.value }; // create a new object with form data
+    
         setFormData([...formData, newFormData]); // add the new form data to the array
-
-        console.log(formData)
     };
       
 
