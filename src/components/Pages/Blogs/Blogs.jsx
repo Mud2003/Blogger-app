@@ -41,7 +41,7 @@ function Blogs() {
             return blogList.map((blogList) => {
                 return(
                     <Blog
-                        key={new Date()}
+                        key={blogList.id}
                         title={blogList.title}
                         para={blogList.para}
                         photo={blogList.photo}
