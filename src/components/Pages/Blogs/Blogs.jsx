@@ -33,7 +33,7 @@ function Blogs() {
             title: "Accusamus beatae ad facilis cum similique qui sunt.",
             para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sapiente illo quasi, maxime similique, praesentium necessitatibus alias sint, quisquam reiciendis itaque laborum cum repudiandae expedita sed commodi? Laudantium, commodi adipisci!",
             photo: "https://via.placeholder.com/150/92c952"
-        },
+        }
     ]
 
     const blogPostComponent = () => {
@@ -41,7 +41,7 @@ function Blogs() {
             return blogList.map((blogList) => {
                 return(
                     <Blog
-                        key={blogList.id}
+                        key={new Date()}
                         title={blogList.title}
                         para={blogList.para}
                         photo={blogList.photo}

@@ -6,8 +6,11 @@ function CreatePost() {
     const [formData, setFormData] = useState([]);
     
     useEffect(() => {
-        console.log(formData);
+        if (formData.length > 0) {
+            console.log(formData);
+        }
     },[formData]);
+
 
 
     const handleSubmit = (event) => {
