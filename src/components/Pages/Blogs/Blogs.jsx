@@ -9,7 +9,7 @@ function Blogs() {
 
     useEffect(() => {
         function getBlogs() {
-            axios.get("http://localhost:8070/blog/",).then((res) => {
+            axios.get("https://blogger-backend-production.up.railway.app/blog/",).then((res) => {
                 setBlogs(res.data);
             }).catch((err) => {
                 alert(err.message);

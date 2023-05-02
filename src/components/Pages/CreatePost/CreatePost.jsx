@@ -22,7 +22,7 @@ function CreatePost() {
         setImgurl('');
         setParagraph('');
 
-        axios.post("http://localhost:8070/blog/add", newBlog).then(()=>{
+        axios.post("https://blogger-backend-production.up.railway.app/blog/add", newBlog).then(()=>{
             alert("Blog Added.....")
         }).catch((err)=>{
             alert(err)
