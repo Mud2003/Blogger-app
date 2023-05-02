@@ -1,24 +1,32 @@
 import './createpost.css';
-import { useEffect, useState } from 'react';
+import {  useState } from 'react';
+import axios from "axios";
 
 function CreatePost() {
 
-    const [formData, setFormData] = useState([]);
-    
-    useEffect(() => {
-        if (formData.length > 0) {
-            console.log(formData);
+    const [title, setTitle] = useState("");
+    const [imgurl, setImgurl] = useState("");
+    const [paragraph, setParagraph] = useState("");
+
+
+    function handleSubmit(e) {
+        e.preventDefault(); // prevent page from refreshing
+
+        const newBlog = {
+            title,
+            imgurl,
+            paragraph
         }
-    },[formData]);
 
+        setTitle('');
+        setImgurl('');
+        setParagraph('');
 
-
-    const handleSubmit = (event) => {
-        event.preventDefault(); // prevent page from refreshing
-        const { imageUrl, title, paragraph } = event.target.elements; // get form data
-        const newFormData  = { imageUrl: imageUrl.value, title: title.value, paragraph: paragraph.value }; // create a new object with form data
-    
-        setFormData([...formData, newFormData]); // add the new form data to the array
+        axios.post("http://localhost:8070/blog/add", newBlog).then(()=>{
+            alert("Blog Added.....")
+        }).catch((err)=>{
+            alert(err)
+        })
     };
       
 
@@ -27,15 +35,21 @@ function CreatePost() {
             <form onSubmit={handleSubmit} className="formcontent">
                 <div className="imgurl">
                     <h3>Image Url:- </h3>
-                    <input type="text" name="imageUrl" />
+                    <input type="text" name="imageUrl" id='imageUrl' value={imgurl} onChange={(e)=>{
+                        setImgurl(e.target.value)
+                    }}/>
                 </div>
                 <div className="title">
                     <h3>Title:- </h3>
-                    <input type="text" name="title" />
+                    <input type="text" name="title" id='title' value={title}  onChange={(e)=>{
+                        setTitle(e.target.value)
+                    }}/>
                 </div>
                 <div className="para">
                     <h3>Paragraph:- </h3>
-                    <textarea name="paragraph" />
+                    <textarea name="paragraph" id='paragraph' value={paragraph}  onChange={(e)=>{
+                        setParagraph(e.target.value)
+                    }}/>
                 </div>
                 <div className="btn">
                     <button type="submit">Submit</button>
