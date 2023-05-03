@@ -1,6 +1,7 @@
 .blog{
     display: flex;
     flex-direction: row;
+    justify-content: left;
     padding: 1rem;
     align-items: center;
     margin-bottom: 1rem;
@@ -20,16 +21,16 @@
     color: #212A3E;
 }
 .content > p{
-    padding-right: 5rem;
+    padding-right: 2rem;
 }
 
 @media screen and (max-width: 878px) {
     .blog{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: left;
-        align-items: flex-start;
-        padding: 1rem;
+        align-items: left;
+        padding: 1rem 2rem;
         margin-bottom: 1rem;
         gap: 2rem;
         border: 1px solid #212A3E;
@@ -39,6 +40,9 @@
     .content{
         display: flex;
         flex-direction: column;
+        justify-content: left;
+        align-items: left;
+        text-align: left;
         gap: 1rem;
         color: #fff;
         padding: 0;
@@ -46,9 +50,12 @@
     }
     .content > h2{
         color: #212A3E;
+        padding-right: 2rem;
+        font-size: 22px;
     }
     .content > p{
-        padding-right: 5rem;
+        padding-right: 3rem;
+        font-size: 14px;
     }
 }
 
@@ -69,6 +76,7 @@
     .content{
         display: flex;
         flex-direction: column;
+        text-align: center;
         gap: 1rem;
         color: #fff;
         padding: 0;
@@ -76,8 +84,11 @@
     }
     .content > h2{
         color: #212A3E;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
     .content > p{
-        padding: 0rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }
