@@ -9,6 +9,7 @@
     border: 1px solid #212A3E;
     border-radius: 20px;
     background-color: #9BA4B5;
+    cursor: pointer;
 }
 .content{
     display: flex;

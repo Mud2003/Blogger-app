@@ -2,7 +2,7 @@ import './blog.css';
 
 function Blog(props) {
     return (
-        <div className='blog'>
+        <div className='blog' onClick={""}>
             <img src={props.photo} alt="" />
             <div className="content">
                 <h2>{props.title}</h2>

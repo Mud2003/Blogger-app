@@ -19,7 +19,9 @@ function NavBar() {
                 <ul className='links'>
                     <li id='ll'><Link to='/'>Home</Link></li>
                     <li id='ll'><Link to='/blogs'>Blogs</Link></li>
-                    <li id='ll'><Link to='/createpost'>Create Post</Link></li>
+                    <li id='ll'><Link to='/login'>Login</Link></li>
+                    <li id='ll'><Link to='/register'>Register</Link></li>
+                    {/* <li id='ll'><Link to='/createpost'>Create Post</Link></li> */}
                 </ul>
                 <div className='menuicon' onClick={clickBtn}>
                     <MenuIcon fontSize='medium' style={{ display: display === 'none' ? 'block' : 'none' }} />
@@ -29,7 +31,9 @@ function NavBar() {
             <ul className="menulist" id='mnl' style={{display}}>
                 <li id='ml'><Link to='/'>Home</Link></li>
                 <li id='ml'><Link to='/blogs'>Blogs</Link></li>
-                <li id='ml'><Link to='/createpost'>Create Post</Link></li>
+                <li id='ml'><Link to='/login'>Login</Link></li>
+                <li id='ml'><Link to='/register'>Register</Link></li>
+                {/* <li id='ml'><Link to='/createpost'>Create Post</Link></li> */}
             </ul>
         </>
     )
