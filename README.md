@@ -1,3 +1,20 @@
+HomePage
+![image](https://github.com/Mud2003/Blogger-app/assets/108977790/5b880ea6-b232-44a4-99ed-21dbc160d443)
+
+BlogsPage
+![image](https://github.com/Mud2003/Blogger-app/assets/108977790/98fa0e6f-347d-41d3-9b78-aebb7e086189)
+
+LoginPage
+![image](https://github.com/Mud2003/Blogger-app/assets/108977790/685ba260-76c4-4fa3-8695-664d87fc2c87)
+
+RegisterPage
+![image](https://github.com/Mud2003/Blogger-app/assets/108977790/e856c2a0-5f65-4152-a9f4-4a77309b77a0)
+
+
+Some functions are not working the reason Mongodb clusters are terminated.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
